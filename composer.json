@@ -60,3 +60,9 @@
     "minimum-stability": "dev",
     "prefer-stable": true
 }
+"scripts": {
+        "post-update-cmd": [
+            "rm -rf public/bootstrap",
+            "cp -R vendor/twbs/bootstrap/dist public/bootstrap"
+        ]
+    }
